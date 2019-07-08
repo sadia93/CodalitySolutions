@@ -1,0 +1,15 @@
+def solution(X, Y, D):
+    import time
+    start = time.time()
+    if(X==Y or X>Y):
+        return 0
+    R=Y-X
+    if (R%D==0):
+        return int(R/D)
+    else:
+        return (int(R//D) + 1)
+    end = time.time()
+    print(end)
+
+
+print(solution(3, 999111321, 7))
